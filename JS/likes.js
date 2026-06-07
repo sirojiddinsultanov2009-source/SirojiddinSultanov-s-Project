@@ -1,16 +1,21 @@
 function isProductLiked(productId) {
-    return getLikedProducts().includes(String(productId));
+    const likes = getLikedProducts();
+    return likes.includes(String(productId));
 }
 
 function toggleProductLike(productId) {
-    const likedProducts = getLikedProducts();
+    const likes = getLikedProducts();
     const id = String(productId);
-    const isLiked = likedProducts.includes(id);
+    const index = likes.indexOf(id);
 
-    const nextLikedProducts = isLiked
-        ? likedProducts.filter((likedId) => likedId !== id)
-        : [...likedProducts, id];
+    if (index === -1) {
+        likes.push(id);
+        saveLikedProducts(likes);
+        return true;
+    }
 
-    saveLikedProducts(nextLikedProducts);
-    return !isLiked;
+    likes.splice(index, 1);
+    saveLikedProducts(likes);
+    return false;
 }
+
