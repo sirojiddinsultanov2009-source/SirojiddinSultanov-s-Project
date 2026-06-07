@@ -4,7 +4,7 @@ async function fetchProducts() {
     const response = await fetch(PRODUCTS_API_URL);
 
     if (!response.ok) {
-        throw new Error("Products could not be loaded");
+        throw new Error("API error");
     }
 
     const data = await response.json();
@@ -13,11 +13,11 @@ async function fetchProducts() {
         return data;
     }
 
-    if (Array.isArray(data.products)) {
+    if (data.products) {
         return data.products;
     }
 
-    if (Array.isArray(data.data)) {
+    if (data.data) {
         return data.data;
     }
 
