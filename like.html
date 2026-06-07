@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify Likes</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-left">
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html">Fertilizer</a></li>
+                    <li><a href="index.html">Guide</a></li>
+                </ul>
+
+                <a class="logo" href="index.html">
+                    <img src="assets/icons/logo.png" alt="Logo">
+                </a>
+
+                <div class="nav-icons">
+                    <a href="cart.html" class="cart-link" aria-label="Open cart">
+                        <img src="assets/icons/shopping.png" alt="Shopping Icon">
+                        <span class="cart-count" data-cart-count>0</span>
+                    </a>
+                    <img src="assets/icons/user.png" alt="User Icon">
+                    <a href="like.html" class="likes-link" aria-label="Open liked products">
+                        <span class="header-heart" aria-hidden="true">&#9829;</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <section class="cart-hero">
+            <div class="container">
+                <p>Plantify favorites</p>
+                <h1>Liked products</h1>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <div class="container">
+                <div class="products" id="products-list" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="JS/storage.js"></script>
+    <script src="JS/api.js"></script>
+    <script src="JS/likes.js"></script>
+    <script src="JS/products.js"></script>
+    <script src="JS/like-page.js"></script>
+</body>
+</html>

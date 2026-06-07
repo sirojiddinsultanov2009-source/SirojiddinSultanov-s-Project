@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-left">
+                <li><a href="#products">Shop</a></li>
+
+                <li class="dropdown">
+                    <a href="#products">
+                        Products
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                </li>
+
+                <li><a href="#">Fertilizer</a></li>
+                <li><a href="#">Guide</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="assets/icons/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-link" aria-label="Open cart">
+                    <img src="assets/icons/shopping.png" alt="Shopping Icon">
+                    <span class="cart-count" data-cart-count>0</span>
+                </a>
+                <img src="assets/icons/user.png" alt="User Icon">
+                <a href="like.html" class="likes-link" aria-label="Open liked products">
+                    <span class="header-heart" aria-hidden="true">&#9829;</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+            <h1>
+                Happiness <br>
+                blooms from <br>
+                within
+            </h1>
+
+            <p>
+                Our environment, the world in which we live and
+                work, is a mirror of our attitudes and expectations.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-light">
+                    Shop now
+                </a>
+                <a href="#" class="btn-link">
+                    Explore plants
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-gallery">
+            <div class="left-column">
+                <div class="small-card">
+                    <span class="badge">
+                        New
+                    </span>
+                    <img src="assets/images/image 3.png" alt="hero-plant-3">
+                </div>
+
+                <div class="small-card-2">
+                    <span class="badge">
+                        Popular
+                    </span>
+                    <img src="assets/images/image 2.png" alt="hero-plant-2">
+                </div>
+            </div>
+
+            <div class="big-card">
+                <span class="badge">
+                    Featured
+                </span>
+                <img src="assets/images/image 1.png" alt="hero-plant-1">
+                  <div class="overlay">
+
+                    <h3>
+                        Anthurium Flower
+                    </h3>
+
+                    <p>
+                        The flower of human being.
+                        It has meaningful fact that
+                        the plant always grow whatever
+                        season and weather.
+                    </p>
+
+                    <a href="#" class="read-btn">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="featured" id="products">
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured</h2>
+            <button class="section-link" id="featured-toggle" type="button" aria-expanded="false">
+                view all
+            </button>
+        </div>
+
+        <div class="products" id="products-list" data-featured-list="true" aria-live="polite"></div>
+    </div>
+
+</section>
+
+<section class="search-section" id="search">
+    <div class="container">
+        <div class="search-box">
+            <button class="filter-btn">
+                <img src="assets/icons/line-settings.png" alt="Filter Icon">
+            </button>
+            <input
+                id="product-search"
+                type="text"
+                placeholder="Search flowers..."
+            >
+            <button class="search-btn">
+                <img src="assets/icons/search2.png" alt="Search Icon">
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="arrivals">
+    <div class="container">
+        <div class="section-header">
+            <h2>Colorful New Arrivals</h2>
+            <a href="#">view all</a>
+        </div>
+
+        <div class="arrival-grid">
+
+            <div class="arrival-card featured-flower">
+                <img src="assets/images/image 14.png" alt="">
+                <div class="arrival-overlay">
+                    <h3>Blue Lily</h3>
+                    <a href="#">
+                        more information →
+                    </a>
+                </div>
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 15.png" alt=" Flower 2">
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 16.png" alt=" Flower 3">
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 17.png" alt=" Flower 4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stands">
+    <div class="container">
+        <div class="stands-header">
+            <h2>Plant stands</h2>
+            <a href="#">
+                more →
+            </a>
+        </div>
+
+        <div class="stands-grid">
+            <div class="stand-card">
+                <img src="assets/images/image 5.png" alt="">
+            </div>
+
+            <div class="stand-card">
+                <img src="assets/images/image 6.png" alt="">
+            </div>
+
+            <div class="stand-card">
+                <img src="assets/images/image 7.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="shipping">
+     <div class="container">
+        <div class="shipping-banner">
+            <img src="assets/images/image 13.png" alt="">
+
+            <div class="shipping-content">
+                <h2>Free Shipping Services</h2>
+                  <p>*only for the same region</p>
+                    <div class="shipping-contact">
+
+                    <div class="contact-item">
+                        <img src="assets/icons/phone.png" alt="">
+                         <span>+62 1189-2719-00</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="assets/icons/mail.png" alt="">
+                        <span>order@platify.co</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="location">
+    <div class="container">
+        <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps?q=Bunyodkor%20shoh%20ko'chasi%2039,%20100097,%20Toshkent,%20Uzbekistan&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="visit-card">
+                <h3>Visit us</h3>
+                <p>
+                    Gekikara Street 16, Atalanta <br>
+                    1327 Block M <br>
+                    Mardial, Sigure <br>
+                    T26 OT2
+                </p>
+
+                <p>
+                    <a href="#">Open day</a> : 11am-5:30pm everyday
+                </p>
+            </div>
+
+            <a href="#" class="direction-btn">
+                ⊙ GET DIRECTIONS
+            </a>
+        </div>
+    </div>
+</section>
+<script src="JS/storage.js"></script>
+<script src="JS/api.js"></script>
+<script src="JS/likes.js"></script>
+<script src="JS/products.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
